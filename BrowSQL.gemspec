@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = BrowSql::VERSION
   gem.authors       = ["Johan Frølich"]
   gem.email         = ["johanfrolich@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{A simple gem for browsing through your sql Database in Rails}
+  gem.summary       = %q{A simple gem for browsing through your sql Database in Rails}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
