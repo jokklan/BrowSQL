@@ -1,0 +1,10 @@
+= simple_form_for [@table, @record], wrapper: :horizontal, html: { :class => 'form-horizontal' } do |f|
+  - @table.columns.each do |column|
+    - puts "#{column.name}: #{column.type} #{column.to_yaml}"
+    = f.input column.name, as: column.type
+  
+  .form-actions
+    = f.button :submit, :class => 'btn-primary'
+    = link_to t('.cancel', :default => t("helpers.links.cancel")),
+                table_records_path(@table), :class => 'btn'
+
