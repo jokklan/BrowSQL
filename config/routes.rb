@@ -4,4 +4,5 @@ BrowSql::Engine.routes.draw do
   resources :tables do
     resources :records
   end
+  
 end
